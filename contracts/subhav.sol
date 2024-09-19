@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT 
 pragma solidity >=0.7.0 <0.9.0; 
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol";
 
 //ERC Token Standard #20 Interface
  
@@ -31,8 +32,8 @@ contract subhav is ERC20Interface {
         name = "SUBHAV Koin";
         decimals = 18;
         _totalSupply = 1_000_001_000_000_000_000_000_000;
-        balances[0xB66EeDf3c09d8E868CC8a6eD049441093013cE67] = _totalSupply;
-        emit Transfer(address(0), 0xB66EeDf3c09d8E868CC8a6eD049441093013cE67, _totalSupply);
+        balances[0x5173b4c81336b233278CDABdA7a389D57a4c114a] = _totalSupply;
+        emit Transfer(address(0), 0x5173b4c81336b233278CDABdA7a389D57a4c114a, _totalSupply);
     }
  
     function totalSupply() public view returns (uint) {
