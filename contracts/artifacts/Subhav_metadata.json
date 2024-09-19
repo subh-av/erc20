@@ -141,6 +141,25 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokens",
+						"type": "uint256"
+					}
+				],
+				"name": "burn",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "decimals",
 				"outputs": [
@@ -154,6 +173,30 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokens",
+						"type": "uint256"
+					}
+				],
+				"name": "mint",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "name",
 				"outputs": [
@@ -161,6 +204,19 @@
 						"internalType": "string",
 						"name": "",
 						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -259,7 +315,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/subhav.sol": "subhav"
+			"contracts/subhav.sol": "Subhav"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -274,11 +330,11 @@
 	},
 	"sources": {
 		"contracts/subhav.sol": {
-			"keccak256": "0xc27376495d3fd12a9e4f50ebc5ab2aea58bfde923d9880b362ab306e0bb3d896",
+			"keccak256": "0x57c4d213cf3e1002aadad243bed31d833850d88d296f76e6a0d581ba9976ef00",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://bce87e6922ae251282cae4357d6a28c7367a0333106949b407bd78816f79eea5",
-				"dweb:/ipfs/QmbXM2cbnfpi1Atj8Vmprd45MxVdgttgvxFRWGeFBvzatx"
+				"bzz-raw://ca648b4de815d6b9a5808a1a9923125cb9b45f3c529f58468a791855f5fa5917",
+				"dweb:/ipfs/Qmd161o2mrhQWjZhRTC5tPzhaX7BtxMQFqsctbDUqVnFwX"
 			]
 		}
 	},
