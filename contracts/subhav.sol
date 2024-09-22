@@ -35,11 +35,11 @@ contract Subhav is ERC20Interface {
 
     constructor() {
         symbol = "SUB";
-        name = "SUBHAV Koin";
+        name = "SUBHAV Coin";
         decimals = 18;
         _totalSupply = 1_000_001_000_000_000_000_000_000;
-        balances[0xB66EeDf3c09d8E868CC8a6eD049441093013cE67] = _totalSupply;
-        emit Transfer(address(0), 0xB66EeDf3c09d8E868CC8a6eD049441093013cE67, _totalSupply);
+        balances[0x419D5cb02EDA1DDbe8A6317f861C7E9bd4E32c12] = _totalSupply;
+        emit Transfer(address(0), 0x419D5cb02EDA1DDbe8A6317f861C7E9bd4E32c12, _totalSupply);
         owner = msg.sender;
     }
 
