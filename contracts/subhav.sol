@@ -33,16 +33,6 @@ contract Subhav is ERC20Interface {
         _;
     }
 
-    constructor() {
-        symbol = "SUB";
-        name = "SUBHAV Coin";
-        decimals = 18;
-        _totalSupply = 1_000_001_000_000_000_000_000_000;
-        balances[0x419D5cb02EDA1DDbe8A6317f861C7E9bd4E32c12] = _totalSupply;
-        emit Transfer(address(0), 0x419D5cb02EDA1DDbe8A6317f861C7E9bd4E32c12, _totalSupply);
-        owner = msg.sender;
-    }
-
     function totalSupply() public view returns (uint) {
         return _totalSupply - balances[address(0)];
     }
@@ -95,5 +85,15 @@ contract Subhav is ERC20Interface {
         _totalSupply -= tokens;
         emit Transfer(msg.sender, address(0), tokens);
         return true;
+    }
+
+    constructor() {
+        symbol = "SUB";
+        name = "SUBHAV Coin";
+        decimals = 18;
+        _totalSupply = 1_000_001_000_000_000_000_000_000;
+        balances[0x419D5cb02EDA1DDbe8A6317f861C7E9bd4E32c12] = _totalSupply;
+        emit Transfer(address(0), 0x419D5cb02EDA1DDbe8A6317f861C7E9bd4E32c12, _totalSupply);
+        owner = msg.sender;
     }
 }
